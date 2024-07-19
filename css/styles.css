@@ -1,22 +1,31 @@
 @charset "UTF-8";
 
+/*gameについて*/
+.game-image {
+    max-width: 70%;/*画像横幅の70％*/
+}
+
+
+
+
+/*contactについて*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;/*背景の色　白*/
 }
 .container {
     width: 50%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color:  #93e9e6;/*枠の背景やわらかい緑*/
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
 }
 h1 {
     text-align: center;
-    color: #333;
+    color: #fff;/*ｈ１サイズの文字の色　白*/
 }
 form {
     display: flex;
@@ -25,24 +34,26 @@ form {
 label {
     margin-top: 10px;
     font-weight: bold;
+    color: #5355db;/*ラベルの文字の色　薄い青紫*/
 }
 input, textarea {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;/*文字打つ場所の背景白*/
     border-radius: 5px;
 }
 button {
     margin-top: 20px;
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #5cb85c;
+    font-size: 20px;
+    color: #fff;/*ボタンの文字白*/
+    background-color: #B47AF5;/*ボタン薄い紫*/
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #4cae4c;
+    background-color: #A45DF5;/*押すと濃い紫*/
 }
+
