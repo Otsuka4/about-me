@@ -57,3 +57,38 @@ button:hover {
     background-color: #A45DF5;/*押すと濃い紫*/
 }
 
+
+/*文字サイズ*/
+.container {
+    padding: 20px;
+}
+
+/*ナビ*/
+
+nav {
+    display: flex;
+    justify-content: center;/*ど真ん中*/
+    background-color: #333;/*背景*/
+}
+nav a {
+    color: white;/*文字の色*/
+    padding: 14px 20px;/*文字のサイズ*/
+    text-decoration: none;
+    text-align: center;/*ど真ん中*/
+}
+nav a:hover {
+    background-color: #ddd;/*選択したときの背景の色*/
+    color: black;/*選択したときの文字の色*/
+}
+
+/*フッター*/
+footer {
+    background-color: #333;/*背景*/
+    color: white;/*文字の色*/
+    text-align: center;/*ど真ん中*/
+    padding: 10px 0;
+    position: fixed;/*一番下*/
+    width: 100%;
+    bottom: 0;
+}
+
