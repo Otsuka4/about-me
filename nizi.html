@@ -4,13 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>にじさんじ</title>
+
 </head>
 
 <body>
 
+    <header>
+        <button class="menu-btn" onclick="openDrawer()">&#9776;</button>
+        <h1>私の好きなにじさんじグループについて</h1>
+    </header>
+
+<!--横から出るタイプのメニュー-->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    .menu-btn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: #333;
+        color: white;
+        border: none;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .drawer-menu {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        background-color: #444;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+    }
+    .drawer-menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .drawer-menu a:hover {
+        background-color: #555;
+    }
+    .drawer-menu .close-btn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .content {
+        margin-left: 15px;
+        padding: 20px;
+    }
+    </style>
+
+    <div id="drawerMenu" class="drawer-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">&times;</a>
+          <ul class="main-nav font-english">
+            <a href="index.html">ホーム</a>
+            <a href="about.html">about</a>
+            <a href="game.html">game</a>
+            <a href="nizi.html">にじさんじ</a>
+            <a href="contact.html">お問い合わせ</a>
+            <a href="rei.html">rei</a>
+        </ul>
+    </div>
+
+    <script>
+        function openDrawer() {
+            document.getElementById("drawerMenu").style.left = "0";
+        }
     
+        function closeDrawer() {
+            document.getElementById("drawerMenu").style.left = "-250px";
+        }
+    </script>
+
 <footer>
-    <p>&copy; 2024 私の会社. 全著作権所有.</p>
+    <p>&copy; 2024 課題</p>
 </footer>
 </body>
 

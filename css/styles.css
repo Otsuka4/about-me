@@ -6,6 +6,17 @@
 }
 
 
+/*一番上の画像*/
+.main-image {
+    width: 100%;
+    height: 300px;
+    background-image: url('profile-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /*contactについて*/
@@ -18,14 +29,14 @@ body {
 .container {
     width: 50%;
     margin: 0 auto;
-    background-color:  #93e9e6;/*枠の背景やわらかい緑*/
+    background-color:  #84c1cc;/*枠の背景薄い水色*/
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
 }
 h1 {
     text-align: center;
-    color: #fff;/*ｈ１サイズの文字の色　白*/
+    color: #9e9eff;/*ｈ１サイズの文字の色*/
 }
 form {
     display: flex;
@@ -34,7 +45,7 @@ form {
 label {
     margin-top: 10px;
     font-weight: bold;
-    color: #5355db;/*ラベルの文字の色　薄い青紫*/
+    color: #9e9eff;/*ラベルの文字の色*/
 }
 input, textarea {
     margin-top: 5px;
@@ -48,13 +59,13 @@ button {
     padding: 10px;
     font-size: 20px;
     color: #fff;/*ボタンの文字白*/
-    background-color: #B47AF5;/*ボタン薄い紫*/
+    background-color: #7fbfff;/*ボタン*/
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #A45DF5;/*押すと濃い紫*/
+    background-color: #3675bc;/*押すと*/
 }
 
 
