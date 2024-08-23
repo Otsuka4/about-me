@@ -29,7 +29,7 @@ body {
 .container {
     width: 50%;
     margin: 0 auto;
-    background-color:  #84c1cc;/*枠の背景薄い水色*/
+    background-color:  #ceeef3;/*枠の背景薄い水色*/
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
