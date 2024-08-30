@@ -190,6 +190,15 @@ h1 {
     display: block;
     margin: 0 auto;
 }
+
+
+/* 小画面（スマートフォン）用スタイル */
+@media (max-width: 767px) {
+    .game-section img {
+        max-width: 200px; /* スマホ用の最大幅 */
+    }
+}
+
 .game-section h2 {
     color: #333;
     font-size: 50px;
@@ -207,9 +216,3 @@ h1 {
     margin-top: 20px;
 }
 
-/* 小画面（スマートフォン）用スタイル */
-@media (max-width: 767px) {
-    .image-container img {
-        max-width: 200px; /* スマホ用の最大幅 */
-    }
-}
