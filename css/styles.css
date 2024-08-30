@@ -1,105 +1,19 @@
-@charset "UTF-8";
-
-/*gameについて*/
-.game-image {
-    max-width: 70%;/*画像横幅の70％*/
-}
-
-
-/*一番上の画像*/
-.main-image {
+.slideshow-container {
+    position: relative;
     width: 100%;
-    height: 300px;
-    background-image: url('profile-background.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
 }
 
-
-/*contactについて*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;/*背景の色　白*/
-}
-.container {
-    width: 50%;
-    margin: 0 auto;
-    background-color:  #ceeef3;/*枠の背景薄い水色*/
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-}
-h1 {
-    text-align: center;
-    color: #9e9eff;/*ｈ１サイズの文字の色*/
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #9e9eff;/*ラベルの文字の色*/
-}
-input, textarea {
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;/*文字打つ場所の背景白*/
-    border-radius: 5px;
-}
-button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color: #fff;/*ボタンの文字白*/
-    background-color: #7fbfff;/*ボタン*/
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #3675bc;/*押すと*/
-}
-
-
-/*文字サイズ*/
-.container {
-    padding: 20px;
-}
-
-/*ナビ*/
-
-nav {
-    display: flex;
-    justify-content: center;/*ど真ん中*/
-    background-color: #333;/*背景*/
-}
-nav a {
-    color: white;/*文字の色*/
-    padding: 14px 20px;/*文字のサイズ*/
-    text-decoration: none;
-    text-align: center;/*ど真ん中*/
-}
-nav a:hover {
-    background-color: #ddd;/*選択したときの背景の色*/
-    color: black;/*選択したときの文字の色*/
-}
-
-/*フッター*/
-footer {
-    background-color: #333;/*背景*/
-    color: white;/*文字の色*/
-    text-align: center;/*ど真ん中*/
-    padding: 10px 0;
-    position: fixed;/*一番下*/
+.slides {
+    display: none;
     width: 100%;
-    bottom: 0;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 

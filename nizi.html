@@ -1,123 +1,94 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>にじさんじ</title>
+<!DOCTYPE html><!--ドクタイプ宣言（HTMLのバージョン説明）-->
+<html lang="ja"><!--全てのコードを＜HTML＞タグで挟む　HTMLファイル作成時絶対に書く-->
 
-</head>
 
-<body>
+<!--ホームページ-->
 
-    <header>
-        <button class="menu-btn" onclick="openDrawer()">&#9776;</button>
-        <h1>私の好きなにじさんじグループについて</h1>
-    </header>
 
-    <section class="game-container">
-        <h2>エデン組</h2>
-        <img class="game-image" src="images/gen.jpg" alt="原神">
-        <p>私がにじさんじを見だしてから最初にデビューしたグループで、
-            最初からエデン組の中でもスローンズというペアがいたり、一人ひとりの個性が強くてとても見ていて楽しいです</p>
-        <p>公式サイト：<a href="https://genshin.hoyoverse.com/ja" target="_blank">https://genshin.hoyoverse.com/ja</a></p>
-    </section>
+<!--ヘッド部分-->
+    <head>
+        <meta charset="UTF-8"><!--文字化け対策　絶対書く-->
+        <title>にじさんじ</title>
+        <meta name = "description" content = "ホームページのメインセクションです。"><!--descriptionでページの説明-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--レスポンシブ対応
+            width=device-width  横幅をデバイスに合わせる　　initial-scale=1.0  等倍表示　　絶対書く-->
+        <link rel="stylesheet" href="css/nizi.css"><!--ｃｓｓ適用-->
 
-    <section class="game-container">
-        <h2>ヴォルタクション</h2>
-        <img class="game-image" src="images/gen.jpg" alt="原神">
-        <p></p>
-        <p>公式サイト：<a href="https://genshin.hoyoverse.com/ja" target="_blank">https://genshin.hoyoverse.com/ja</a></p>
-    </section>
 
-    <section class="game-container">
-        <h2></h2>
-        <img class="game-image" src="images/gen.jpg" alt="原神">
-        <p></p>
-        <p>公式サイト：<a href="https://genshin.hoyoverse.com/ja" target="_blank">https://genshin.hoyoverse.com/ja</a></p>
-    </section>
-<!--横から出るタイプのメニュー-->
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #333;
-        color: white;
-        padding: 15px;
-        text-align: center;
-    }
-    .menu-btn {
-        font-size: 30px;
-        cursor: pointer;
-        background-color: #333;
-        color: white;
-        border: none;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-    }
-    .drawer-menu {
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        background-color: #444;
-        overflow-x: hidden;
-        transition: 0.3s;
-        padding-top: 60px;
-    }
-    .drawer-menu a {
-        padding: 10px 15px;
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-        display: block;
-        transition: 0.3s;
-    }
-    .drawer-menu a:hover {
-        background-color: #555;
-    }
-    .drawer-menu .close-btn {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-    .content {
-        margin-left: 15px;
-        padding: 20px;
-    }
-    </style>
+    </head>
 
-    <div id="drawerMenu" class="drawer-menu">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">&times;</a>
-          <ul class="main-nav font-english">
-            <a href="index.html">ホーム</a>
-            <a href="about.html">about</a>
-            <a href="game.html">game</a>
-            <a href="nizi.html">にじさんじ</a>
-            <a href="contact.html">お問い合わせ</a>
-            <a href="rei.html">rei</a>
-        </ul>
-    </div>
 
-    <script>
-        function openDrawer() {
-            document.getElementById("drawerMenu").style.left = "0";
-        }
-    
-        function closeDrawer() {
-            document.getElementById("drawerMenu").style.left = "-250px";
-        }
-    </script>
+<!--ボディ部分-->
+    <body>
 
-<footer>
-    <p>&copy; 2024 課題</p>
-</footer>
-</body>
 
-</html>
+                <!--上の写真-->
+
+
+                <style>
+                    .image {
+                        width: 100%;
+                        height: 300px;
+                    }
+                    </style>
+                    <img src="gatya.png" alt="gatya" class="image">
+                    
+        <!--ヘッダー-->
+        <header class="page-header">
+            <nav>
+                <ul class="main-nav font-english">
+                    <a href="index.html">ホーム</a>
+                    <a href="about.html">about me</a>
+                    <a href="game.html">ゲーム</a>
+                    <a href="nizi.html">にじさんじ</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </ul>
+            </nav>
+        </header>
+        <!--ドロワーメニュー（ナビゲーション）-->
+        <script src="js/scripts.js"></script><!--js適用-->
+        <div class="drawer"><!--ｃｓｓのdrawerを使う-->
+                <button class="drawer-toggle">☰</button><!--メニューの開くマーク-->
+                <nav class="drawer-menu"><!--中身-->
+                <button class="drawer-close">&times;</button><!--メニューの閉じるマーク-->
+                <a href="index.html">ホーム</a>
+                <a href="about.html">about me</a>
+                <a href="game.html">ゲーム</a>
+                <a href="nizi.html">にじさんじ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+
+
+        <!--ホーム-->
+        <div class="content">
+            <h1>ようこそ!</h1>
+            <p>このページはにじさんじの特に好きなグループを紹介するページです。<br>
+                右上の『☰』をクリックするとメニューが開きます。
+            </p>
+        </div>
+
+
+    <!--フッター部分-->
+    <footer class="page-footer">
+        <h3 class="heading-large font-english">Information</h3>
+        <table class="info">
+            <tr>
+                <th>住所</th>
+                <td>滋賀県内</td>
+            </tr>
+            <tr>
+                <th>メール</th>
+                <td>ktc〇〇〇〇@edu.kyoto-tech.jp</td>
+            </tr>
+            <tr>
+                <th>電話</th>
+                <td>090-1234-5678</td>
+            </tr>
+        </table>
+    <!--コピーライト(フッター)-->
+            <div class="copyright">
+                <small>&copy; 2024 課題</small>
+            </div>
+        </footer>
+    </body>

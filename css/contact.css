@@ -1,0 +1,235 @@
+
+@charset "UTF-8";
+
+
+/*フォント
+横から出るタイプのメニュー
+ナビ
+フッター*/
+
+
+/*フォント*/
+.font-english {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+/*ドロワーメニュー*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.drawer {
+    position: relative;
+}
+
+
+.drawer-toggle {
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+.drawer-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* 初期状態でメニューを隠す */
+    width: 250px;
+    height: 350px;
+    background-color: #333;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s; /* アニメーションのスムーズさ */
+    padding-top: 60px;
+}
+
+
+.drawer-menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.drawer-menu a:hover {
+    background-color: #fff;
+}
+
+
+.drawer-menu.open {
+    right: 0; /* メニューが表示される位置 */
+}
+
+
+.content {
+    margin-right: 0;
+    padding: 16px;
+}
+
+
+.drawer-close {
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+
+
+
+/*ナビ*/
+.main-nav {
+    display: flex;
+    justify-content: center;/*ど真ん中*/
+    background-color: #333;/*背景*/
+}
+nav a {
+    color: white;/*文字の色*/
+    padding: 23px 20px;/*文字のサイズ*/
+    text-decoration: none;
+    text-align: center;/*ど真ん中*/
+}
+nav a:hover {
+    background-color: #ddd;/*選択したときの背景の色*/
+    color: black;/*選択したときの文字の色*/
+}
+
+
+
+
+/*フッター部分*/
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+    flex: 1;
+}
+
+
+.info th,
+.info td {
+    border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+.info td {
+    padding: 1rem 0;
+}
+
+
+/*コピーライト*/
+.copyright {
+    background-color: #432;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 6rem;
+    color: #fff;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/*各ページで変更
+問い合わせ*/
+
+
+
+
+/*お問い合わせ*/
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color:  #ceeef3;/*枠の背景薄い水色*/
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;/*背景の色　白*/
+}
+h1 {
+    text-align: center;
+    color: #333;/*ｈ１サイズの文字の色*/
+}
+
+
+/*文字の色*/
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000000;/*ラベルの文字の色*/
+    text-align: center;/*ど真ん中*/
+}
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;/*文字打つ場所の背景白*/
+    border-radius: 5px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;/*ボタンの文字白*/
+    background-color: #7fbfff;/*ボタン*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3675bc;/*押すと*/
+}
+
+

@@ -1,31 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ</title>
 
-    <link href="./css/styles.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1>お問い合わせ</h1>
+
+
+
+<!--お問い合わせページ-->
+
+
+<!--ヘッド部分-->
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせページ</title>
+        <meta name = "description" content = "お問い合わせページです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+
+
+    <!--ボディ部分-->
+    <body>
+
+
+                <!--上の写真-->
+
+
+                <style>
+                    .image {
+                        width: 100%;
+                        height: 300px;
+                    }
+                    </style>
+                    <img src="gatya.png" alt="gatya" class="image">
+        <!--ヘッダー-->
+        <header class="page-header">
+            <nav>
+                <ul class="main-nav font-english">
+                    <a href="index.html">ホーム</a>
+                    <a href="about.html">about me</a>
+                    <a href="game.html">ゲーム</a>
+                    <a href="nizi.html">にじさんじ</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </ul>
+            </nav>
+        </header>
+        <!--ドロワーメニュー（ナビゲーション）-->
+        <script src="js/scripts.js"></script><!--js適用-->
+        <div class="drawer"><!--ｃｓｓのdrawerを使う-->
+                <button class="drawer-toggle">☰</button><!--メニューの開くマーク-->
+                <nav class="drawer-menu"><!--中身-->
+                <button class="drawer-close">&times;</button><!--メニューの閉じるマーク-->
+                <a href="index.html">ホーム</a>
+                <a href="about.html">about me</a>
+                <a href="game.html">ゲーム</a>
+                <a href="nizi.html">にじさんじ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+
+
+        <!--ホーム-->
+        <div class="content">
+            <h1>お問い合わせページ</h1>
+            <p>このページはお問い合わせページです。<br>
+                右上の『☰』をクリックするとメニューが開きます。<br>
+            </p>
+
+
+            <h3>下の枠にお名前・メールアドレス・お問い合わせ内容をご記入の上、<br>
+                送信ボタンを押してください。</h3>
+        </div>
+        <div class="container">
         <form action="submit_form.php" method="post">
-            <label for="name">名前</label>
+            <label for="name">お名前</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">メールアドレス</label>
             <input type="email" id="email" name="email" required>
-
             <label for="message">お問い合わせ内容</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-
             <button type="submit">送信</button>
         </form>
-    </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 課題</p>
-    </footer>
-</body>
-</html>
+
+
+
+            <!--フッター部分-->
+            <footer class="page-footer">
+                <h3 class="heading-large font-english">Information</h3>
+                <table class="info">
+                    <tr>
+                        <th>住所</th>
+                        <td>滋賀県内</td>
+                    </tr>
+                    <tr>
+                        <th>メール</th>
+                        <td>ktc〇〇〇〇@edu.kyoto-tech.jp</td>
+                    </tr>
+                    <tr>
+                        <th>電話</th>
+                        <td>090-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <th>最後まで閲覧いただき、</th>
+                        <td>ありがとうございました!</td>
+                    </tr>
+                </table>
+        <!--コピーライト(フッター)-->
+                <div class="copyright">
+                    <small>&copy; 2024 課題</small>
+                </div>
+            </footer>
+    </body>
+
+
+

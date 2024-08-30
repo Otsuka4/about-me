@@ -1,59 +1,136 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><!--ドクタイプ宣言（HTMLのバージョン説明）-->
+<html lang="ja"><!--全てのコードを＜HTML＞タグで挟む　HTMLファイル作成時絶対に書く-->
+
+
+<!--ホームページ-->
+
+
+<!--ヘッド部分-->
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8"><!--文字化け対策　絶対書く-->
+        <title>ホーム</title>
+        <meta name = "description" content = "ホームページのメインセクションです。"><!--descriptionでページの説明-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--レスポンシブ対応
+            width=device-width  横幅をデバイスに合わせる　　initial-scale=1.0  等倍表示　　絶対書く-->
+        <link rel="stylesheet" href="css/index.css"><!--ｃｓｓ適用-->
+
 
     </head>
-    <body>
-        <script src="js/main.js"></script>
 
-        <div class="main-image">
-            <img src="profile.jpg" alt="写真">
+
+<!--ボディ部分-->
+    <body>
+        <!--上の写真-->
+
+        <style>
+            .image {
+                width: 100%;
+                height: 300px;
+            }
+
+        </style>
+        <div class="image">
+        <img src="images/o-rora.jpg" alt="o-rora" class="image">
         </div>
 
+        <!--ヘッダー-->
         <header class="page-header">
             <nav>
                 <ul class="main-nav font-english">
                     <a href="index.html">ホーム</a>
-                    <a href="about.html">about</a>
-                    <a href="game.html">game</a>
+                    <a href="about.html">about me</a>
+                    <a href="game.html">ゲーム</a>
                     <a href="nizi.html">にじさんじ</a>
                     <a href="contact.html">お問い合わせ</a>
-                    <a href="rei.html">rei</a>
                 </ul>
             </nav>
         </header>
-
-        <div class="container">
-            <section id="home">
-                <h2><a href="index.html">ホーム</a></h2>
-                <p>ホームページのメインセクションです。</p>
-            </section>
-            <section id="about">
-                <h2><a href="about.html">about</a></h2>
-                <p>私について書いてあります。</p>
-            </section>
-            <section id="game">
-                <h2><a href="game.html">game</a></h2>
-                <p>私の好きなゲームについて書いてあります。</p>
-            </section>
-            <section id="nizi">
-                <h2><a href="nizi.html">にじさんじ</a></h2>
-                <p>私が特によく見るグループについて書いてあります。</p>
-            </section>
-            <section id="contact">
-                <h2><a href="contact.html">お問い合わせ</a></h2>
-                <p>お問い合わせページです。</p>
-            </section>
-
+        <!--ドロワーメニュー（ナビゲーション）-->
+        <script src="js/scripts.js"></script><!--js適用-->
+        <div class="drawer"><!--ｃｓｓのdrawerを使う-->
+                <button class="drawer-toggle">☰</button><!--メニューの開くマーク-->
+                <nav class="drawer-menu"><!--中身-->
+                <button class="drawer-close">&times;</button><!--メニューの閉じるマーク-->
+                <a href="index.html">ホーム</a>
+                <a href="about.html">about me</a>
+                <a href="game.html">ゲーム</a>
+                <a href="nizi.html">にじさんじ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
         </div>
 
-        <footer>
-            <p>&copy; 2024 課題</p>
+
+        <!--ホーム-->
+        <div class="content">
+            <h1>ようこそ!閲覧ありがとうございます！</h1>
+            <p>このページはホームページです。<br>
+                右上の『☰』をクリックするとメニューが開きます。<br>
+                このページには、ほかのページの簡単な説明、イメージ画像があります。<br>
+                画像をクリックするとそのページに飛びます。<br>
+                他のページにもぜひ遊びに来てください！
+            </p>
+        </div>
+
+
+
+
+        <!--タイル型表示-->
+        <div class="grid">
+            <div class="item">
+                <a href="index.html"><img src="images/o-rora.jpg" alt="o-rora"></a>
+                <h2>ホーム</h2>
+                <p>ホームページのメインセクションです。</p>
+            </div>
+            <div class="item">
+                <a href="about.html"><img src="gatya.png" alt="gatya"></a>
+                <h2>about me</h2>
+                <p>私について書いてあるページです。</p>
+            </div>
+            <div class="item">
+                <a href="game.html"><img src="gatya.png" alt="gatya"></a>
+                <h2>game</h2>
+                <p>私が特に好きなゲームについて紹介しているページです。</p>
+            </div>
+            <div class="item">
+                <a href="nizi.html"><img src="gatya.png" alt="gatya"></a>
+                <h2>にじさんじ</h2>
+                <p>私が特に良く見るグループについて紹介しているページです。</p>
+            </div>
+            <div class="item">
+                <a href="contact.html"><img src="gatya.png" alt="gatya"></a>
+                <h2>お問い合わせ</h2>
+                <p>お問い合わせページです。</p>
+            </div>
+            <div class="item">
+                <img src="gatya.png" alt="gatya">
+                <h2>猫</h2>
+                <p>家の猫です。<br>
+                今年１９歳の黒猫です。<br>
+                人間の年にすると８８歳～９２歳。</p>
+            </div>
+        </div>
+
+
+    <!--フッター部分-->
+        <footer class="page-footer">
+            <h3 class="heading-large font-english">Information</h3>
+            <table class="info">
+                <tr>
+                    <th>住所</th>
+                    <td>滋賀県内</td>
+                </tr>
+                <tr>
+                    <th>メール</th>
+                    <td>ktc〇〇〇〇@edu.kyoto-tech.jp</td>
+                </tr>
+                <tr>
+                    <th>電話</th>
+                    <td>090-1234-5678</td>
+                </tr>
+            </table>
+    <!--コピーライト(フッター)-->
+            <div class="copyright">
+                <small>&copy; 2024 課題</small>
+            </div>
         </footer>
     </body>
-</html>
-

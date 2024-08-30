@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-</head>
 
-<body>
-    <header>
-        <h1>自己紹介</h1>
-        <p>大塚 由華</p>
-    </header>
 
-    <section>
-        <h2>詳細</h2>
+<!--自己紹介ページ-->
 
-        <p>学校<br>
-        京都デザイン&テクノロジー専門学校<br>
-        スーパーAI&テクノロジー科　ホワイトハッカー専攻
-        </p>
 
-        <p>出身<br>
-        滋賀県</p>
+<!--ヘッド部分-->
+    <head>
+        <meta charset="UTF-8">
+        <title>自己紹介ページ</title>
+        <meta name = "description" content = "自己紹介ページです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/about.css">
+    </head>
+    <!--ボディ部分-->
+    <body>
 
-        <p>好きなこと<br>
-        ゲーム・にじさんじ・読書</p>
 
-        <p>部活動<br>
-        中学　：テニス部 後衛<br>
-        高校　：ライフル射撃部 エアライフル・ビームライフル</p>
-    </section>
+                <!--上の写真-->
 
-    <footer>
-        <p>&copy; 2024 課題</p>
-    </footer>
-</body>
-</html>
+
+                <style>
+                    .image {
+                        width: 100%;
+                        height: 300px;
+                    }
+                    </style>
+                    <img src="gatya.png" alt="gatya" class="image">
+                    
+        <!--ヘッダー-->
+        <header class="page-header">
+            <nav>
+                <ul class="main-nav font-english">
+                    <a href="index.html">ホーム</a>
+                    <a href="about.html">about me</a>
+                    <a href="game.html">ゲーム</a>
+                    <a href="nizi.html">にじさんじ</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </ul>
+            </nav>
+        </header>
+        <!--ドロワーメニュー（ナビゲーション）-->
+        <script src="js/scripts.js"></script><!--js適用-->
+        <div class="drawer"><!--ｃｓｓのdrawerを使う-->
+                <button class="drawer-toggle">☰</button><!--メニューの開くマーク-->
+                <nav class="drawer-menu"><!--中身-->
+                <button class="drawer-close">&times;</button><!--メニューの閉じるマーク-->
+                <a href="index.html">ホーム</a>
+                <a href="about.html">about me</a>
+                <a href="game.html">ゲーム</a>
+                <a href="nizi.html">にじさんじ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+
+
+        <!--ホーム-->
+        <div class="content">
+            <h1>自己紹介</h1>
+            <p>このページは自己紹介ページです。<br>
+                右上の『☰』をクリックするとメニューが開きます。
+            </p>
+        </div>
+
+
+        <!--自己紹介-->
+        <div class="about">
+            <div>
+            <h3>名前</h3>
+            <p>大塚 由華</p>
+            </div>
+   
+            <div>
+            <h3>学校</h3>
+            <p>京都デザイン&テクノロジー専門学校<br>
+            スーパーAI&テクノロジー科　ホワイトハッカー専攻</p>
+            </div>
+
+
+            <div>
+            <h3>出身</h3>
+            <p>滋賀県</p>
+            </div>
+       
+            <div>
+            <h3>好きなこと・もの</h3>
+            <p>ゲーム・にじさんじ<br>
+                読書・睡眠</p>
+            </div>
+       
+            <div>
+            <h3>部活動</h3>
+            <p>中学：テニス部　後衛<br>
+                <br>
+            高校：ライフル射撃部　<br>
+            ビームライフル・エアライフル</p>
+            </div>
+
+
+            <div>
+                <h3>ペット</h3>
+                <p>元野良の全身真っ黒の猫を飼っています</p>
+                </div>
+        </div>
+       
+   
+            <!--フッター部分-->
+            <footer class="page-footer">
+                <h3 class="heading-large font-english">Information</h3>
+                <table class="info">
+                    <tr>
+                        <th>住所</th>
+                        <td>滋賀県内</td>
+                    </tr>
+                    <tr>
+                        <th>メール</th>
+                        <td>ktc〇〇〇〇@edu.kyoto-tech.jp</td>
+                    </tr>
+                    <tr>
+                        <th>電話</th>
+                        <td>090-1234-5678</td>
+                    </tr>
+                </table>
+        <!--コピーライト(フッター)-->
+                <div class="copyright">
+                    <small>&copy; 2024 課題</small>
+                </div>
+            </footer>
+    </body>
+

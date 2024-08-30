@@ -1,55 +1,146 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/styles.css" rel="stylesheet">
-    <title>好きなゲーム紹介ページ</title>
-</head>
+<!DOCTYPE html><!--ドクタイプ宣言（HTMLのバージョン説明）-->
+<html lang="ja"><!--全てのコードを＜HTML＞タグで挟む　HTMLファイル作成時絶対に書く-->
 
-<body>
-    <header>
-        <h1>好きなゲーム紹介「HoYovers」ページ</h1>
-    </header>
 
-    <section class="game-container">
-        <h2>原神</h2>
-        <img class="game-image" src="images/gen.jpg" alt="原神">
-        <p>『原神』はオープンワールドのアドベンチャーRPG。 <br>
-            「テイワット」と呼ばれる幻想世界が舞台。
-             この広大な世界で、あなたは7つの国を巡り、ユニークな個性と能力を備えた多様なキャラクターと出会い、
-             彼らと共に強敵と戦いながら、生き別れた兄妹との再会を目指す。</p>
-        <p>公式サイト：<a href="https://genshin.hoyoverse.com/ja" target="_blank">https://genshin.hoyoverse.com/ja</a></p>
-    </section>
+<!--ホームページ-->
 
-    <section class="game-container">
-        <h2>崩壊スターレイル</h2>
-        <img class="game-image" src="images/sutare.jpg" alt="崩壊スターレイル">
-        <p>『崩壊スターレイル』はコマンドバトル兼探索。<br>
-            宇宙空間が舞台として作られており、
-            開拓者である主人公が星穹列車と呼ばれる乗り物に乗り広大な宇宙へ旅に出るSFチックなストーリー。
-            エネミーとのバトルだけではなく、ストーリー部分でも楽しめる作品。<br>
-            崩壊スターレイルは、ターン制のコマンドバトルで戦闘が進みます。
-            プレイヤーは、多彩なスキルを駆使して戦いを行うことができ、
-            コマンドバトル特有の戦術的な戦闘を楽しむことが可能です。<br>
-            また、キャラクターの育成や装備の強化など、RPGの要素も充実しています。<br>
+
+<!--ヘッド部分-->
+    <head>
+        <meta charset="UTF-8"><!--文字化け対策　絶対書く-->
+        <title>ゲーム</title>
+        <meta name = "description" content = "ホームページのメインセクションです。"><!--descriptionでページの説明-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--レスポンシブ対応
+            width=device-width  横幅をデバイスに合わせる　　initial-scale=1.0  等倍表示　　絶対書く-->
+        <link rel="stylesheet" href="css/game.css"><!--ｃｓｓ適用-->
+
+
+    </head>
+
+
+<!--ボディ部分-->
+    <body>
+
+
+                <!--上の写真-->
+
+
+                <style>
+                    .image {
+                        width: 100%;
+                        height: 300px;
+                    }
+                    </style>
+                    <img src="gatya.png" alt="gatya" class="image">
+        <!--ヘッダー-->
+        <header class="page-header">
+            <nav>
+                <ul class="main-nav font-english">
+                    <a href="index.html">ホーム</a>
+                    <a href="about.html">about me</a>
+                    <a href="game.html">ゲーム</a>
+                    <a href="nizi.html">にじさんじ</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </ul>
+            </nav>
+        </header>
+        <!--ドロワーメニュー（ナビゲーション）-->
+        <script src="js/scripts.js"></script><!--js適用-->
+        <div class="drawer"><!--ｃｓｓのdrawerを使う-->
+                <button class="drawer-toggle">☰</button><!--メニューの開くマーク-->
+                <nav class="drawer-menu"><!--中身-->
+                <button class="drawer-close">&times;</button><!--メニューの閉じるマーク-->
+                <a href="index.html">ホーム</a>
+                <a href="about.html">about me</a>
+                <a href="game.html">ゲーム</a>
+                <a href="nizi.html">にじさんじ</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+
+
+        <!--ホーム-->
+        <div class="content">
+            <h1>ゲーム：「HoYovers」</h1>
+            <p>このページは「HoYovers」の中で私がしているゲーム３種類を紹介します。<br>
+                右上の『☰』をクリックするとメニューが開きます。</p>
+        </div>
+
+
+
+
+        <!--ホヨバ-->
+        <div class="game-bg">
+        <div class="game-section">
+            <h2>HoYovers</h2>
+            <p>
+                HoYoversは、ゲーム開発会社です。<br>
+                このページでは、HoYoversが開発したゲームを紹介します。<br>
+            </p></div></div>
+
+
+        <!--ゲーム紹介-->
+    <div class="game-section">
+        <h2>原神 (Genshin Impact)</h2>
+        <img src="gatya.png" alt="原神">
+        <p>
+            原神は、HoYoverseが開発したオープンワールドRPGです。<br>
+            プレイヤーは「旅人」として、広大な世界「テイワット」を探索し、<br>
+            元素の力を駆使して敵と戦い、謎を解き明かしていきます。
         </p>
-        <p>公式サイト：<a href="https://hsr.hoyoverse.com/ja-jp/home" target="_blank">https://hsr.hoyoverse.com/ja-jp/home</a></p>
-    </section>
+    </div>
 
-    <section class="game-container">
-        <h2>ゼンレスゾーンゼロ</h2>
-        <img class="game-image" src="images/zennzero.jpg" alt="ゼンレスゾーンゼロ">
-        <p>『ゼンレスゾーンゼロ』は最新都市ファンタジーアクションRPG。<br>
-            現代文明が崩壊した後の世界が舞台<br>
-            冒険しながら、危険が待ち受ける「ホロウ」を調査し、
-            人類文明にとっての最後の希望の裏に隠された秘密を解き明かしていこう。
-            </p>
-        <p>公式サイト：<a href="https://zenless.hoyoverse.com/ja-jp/" target="_blank">https://zenless.hoyoverse.com/ja-jp/</a></p>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 課題</p>
-    </footer>
-</body>
-</html>
+    <div class="game-section">
+        <h2>崩壊スターレイル (Honkai: Star Rail)</h2>
+        <img src="gatya.png" alt="崩壊スターレイル">
+        <p>
+            崩壊スターレイルは、宇宙を舞台としたターン制バトルRPGです。<br>
+            プレイヤーは様々なキャラクターを操り、宇宙を旅しながら謎を解き明かし、<br>
+            敵との戦闘を楽しむことができます。
+        </p>
+    </div>
+
+
+    <div class="game-section">
+        <h2>ゼンレスゾーンゼロ (Zenless Zone Zero)</h2>
+        <img src="gatya.png" alt="ゼンレスゾーンゼロ">
+        <p>
+            ゼンレスゾーンゼロは、近未来都市を舞台としたアクションRPGです。<br>
+            プレイヤーは個性的なキャラクターを操作し、都市で発生する異常事態を解決しながら、<br>
+            ストーリーを進めていきます。
+        </p>
+    </div>
+
+
+
+
+    <div class="game-kousiki">
+        <div>
+        <h2>原神公式YouTubeチャンネル</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bVCrY9Xg0Tg?si=ygm3wXWqn0sban6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></div>
+
+
+    <div class="game-kousiki">
+        <div>
+        <h2>崩壊スターレイル公式Youtubeチャンネル</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tL2NguNdfMU?si=IcwYi5jqoOIG-O7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></div>
+
+
+    <div class="game-kousiki">
+        <div>
+        <h2>ゼンレスゾーンゼロ公式YouTubeチャンネル</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zLZcEIHBX38?si=hBF2xbA72kwyh9BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></div>
+
+
+   
+        <!--コピーライト(フッター)-->
+                <div class="copyright">
+                    <small>&copy; 2024 課題</small>
+                </div>
+            </footer>
+    </body>
+
