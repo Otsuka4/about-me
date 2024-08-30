@@ -160,14 +160,8 @@ body {
 }
 
 
-
-
-
-
 /*各ページで変更
 問い合わせ*/
-
-
 
 
 /*お問い合わせ*/
@@ -205,12 +199,14 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 label {
     margin-top: 10px;
     font-weight: bold;
     color: #000000;/*ラベルの文字の色*/
     text-align: center;/*ど真ん中*/
 }
+
 input, textarea {
     margin-top: 5px;
     padding: 10px;
@@ -218,6 +214,7 @@ input, textarea {
     border: 1px solid #ddd;/*文字打つ場所の背景白*/
     border-radius: 5px;
 }
+
 button {
     margin-top: 20px;
     padding: 10px;
@@ -228,6 +225,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #3675bc;/*押すと*/
 }

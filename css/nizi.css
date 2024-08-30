@@ -195,6 +195,30 @@ h1 {
 }
 
 
+/*ホーム*/
+
+.grid {
+    display: grid;/*タイル型*/  
+    gap: 3rem 2rem;/*タイル間の間隔*/
+    grid-template-columns: repeat(3, 1fr);/*1列3つ並ぶ*/
+    text-align: center;/*ど真ん中*/
+}
+
+.grid-1 {
+    display: grid;/*タイル型*/  
+    gap: 3rem 2rem;/*タイル間の間隔*/
+    grid-template-columns: repeat(2, 1fr);/*1列3つ並ぶ*/
+    text-align: center;/*ど真ん中*/
+}
+
+.item img {
+    aspect-ratio: 1/1;/*1:1*/
+    object-fit: cover;/*はみ出し部分カット */
+    border-radius: 16px;
+    max-width: 60%;
+    max-height: 60%;
+}
+
 img.miniimage { display: none; }   /* ※1 */
 
 /* ▼表示領域が600px以上の場合 */

@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-
 /*フォント
 横から出るタイプのメニュー
 ナビ
 フッター*/
-
 
 /*フォント*/
 .font-english {
@@ -18,7 +16,6 @@
     margin-bottom: 1rem;
 }
 
-
 /*ドロワーメニュー*/
 body {
     margin: 0;
@@ -26,11 +23,9 @@ body {
     text-align: center;
 }
 
-
 .drawer {
     position: relative;
 }
-
 
 .drawer-toggle {
     font-size: 24px;
@@ -43,7 +38,6 @@ body {
     top: 10px;
     right: 10px;
 }
-
 
 .drawer-menu {
     position: fixed;
@@ -58,7 +52,6 @@ body {
     padding-top: 60px;
 }
 
-
 .drawer-menu a {
     padding: 15px 25px;
     text-decoration: none;
@@ -67,22 +60,18 @@ body {
     transition: 0.3s;
 }
 
-
 .drawer-menu a:hover {
     background-color: #fff;
 }
-
 
 .drawer-menu.open {
     right: 0; /* メニューが表示される位置 */
 }
 
-
 .content {
     margin-right: 0;
     padding: 16px;
 }
-
 
 .drawer-close {
     font-size: 36px;
@@ -94,8 +83,6 @@ body {
     top: 0px;
     left: 20px;
 }
-
-
 
 
 /*ナビ*/
