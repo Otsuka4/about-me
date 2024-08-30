@@ -31,7 +31,6 @@ body {
     position: relative;
 }
 
-
 .drawer-toggle {
     font-size: 24px;
     background-color: #333;
@@ -43,7 +42,6 @@ body {
     top: 10px;
     right: 10px;
 }
-
 
 .drawer-menu {
     position: fixed;
@@ -58,7 +56,6 @@ body {
     padding-top: 60px;
 }
 
-
 .drawer-menu a {
     padding: 15px 25px;
     text-decoration: none;
@@ -67,22 +64,18 @@ body {
     transition: 0.3s;
 }
 
-
 .drawer-menu a:hover {
     background-color: #fff;
 }
-
 
 .drawer-menu.open {
     right: 0; /* メニューが表示される位置 */
 }
 
-
 .content {
     margin-right: 0;
     padding: 16px;
 }
-
 
 .drawer-close {
     font-size: 36px;
@@ -94,7 +87,6 @@ body {
     top: 0px;
     left: 20px;
 }
-
 
 
 
@@ -182,6 +174,7 @@ h1 {
     color: #333;
     font-size: 50px;
     margin-top: 20px;
+    text-align: center;
 }
 .YouTube p {
     font-size: 20px;
@@ -194,8 +187,12 @@ h1 {
     margin-top: 20px;
 }
 
+.YouTube-douga h2 {
+    
+}
 
-/*ホーム*/
+
+/*アイコン*/
 
 .grid {
     display: grid;/*タイル型*/  
@@ -207,7 +204,7 @@ h1 {
 .grid-1 {
     display: grid;/*タイル型*/  
     gap: 3rem 2rem;/*タイル間の間隔*/
-    grid-template-columns: repeat(2, 1fr);/*1列3つ並ぶ*/
+    grid-template-columns: repeat(2, 1fr);/*1列2つ並ぶ*/
     text-align: center;/*ど真ん中*/
 }
 
