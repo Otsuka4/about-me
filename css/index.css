@@ -150,7 +150,6 @@ nav a:hover {
     color: #fff;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -158,14 +157,8 @@ body {
 
 
 
-
-
-
 /*各ページで変更
 ホーム*/
-
-
-
 
 /*ホーム*/
 .grid {
@@ -175,7 +168,6 @@ body {
     text-align: center;/*ど真ん中*/
 }
 
-
 .item img {
     aspect-ratio: 1/1;/*1:1*/
     object-fit: cover;/*はみ出し部分カット */
@@ -184,8 +176,9 @@ body {
     max-height: 60%;
 }
 
-
 .item p {
     font-size: .875rem;
 }
+
+
 
