@@ -195,7 +195,7 @@ h1 {
 /* 小画面（スマートフォン）用スタイル */
 @media (max-width: 767px) {
     .game-section img {
-        max-width: 200px; /* スマホ用の最大幅 */
+        max-width: 100%; /* スマホ用の最大幅 */
     }
 }
 
