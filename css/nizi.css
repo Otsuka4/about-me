@@ -193,3 +193,19 @@ h1 {
     grid-gap: 20px;
     margin-top: 20px;
 }
+
+
+img.miniimage { display: none; }   /* ※1 */
+
+/* ▼表示領域が600px以上の場合 */
+@media (min-width: 600px) {
+   img.miniimage { display: none; }  /* miniを非表示 */
+   img.bigimage  { display: block; } /* bigを表示 */
+}
+/* ▼表示領域が600px未満の場合 */
+@media (max-width: 599px) {
+   img.miniimage { display: block; } /* miniを表示 */
+   img.bigimage  { display: none; }  /* bigを非表示 */
+}
+
+.resizeimage img { width: 100%; }

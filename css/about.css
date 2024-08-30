@@ -165,7 +165,7 @@ body {
 /*自己紹介用*/
 .about {
     display: grid;/*タイル型*/
-    grid-template-columns: repeat(2, 1fr);/*1列2つ並ぶ*/
+    
     text-align: center;/*ど真ん中*/
     align-items: center;
     height: 70%;
